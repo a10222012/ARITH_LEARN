@@ -1,1 +1,2 @@
 mediam select program used to select the specific number in an unsorted series
+if you want to find the nth number of a series of N numbers, the input should be n A[1] A[2]...A[N].
