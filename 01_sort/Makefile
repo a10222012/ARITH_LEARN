@@ -6,6 +6,10 @@ heap:
 	gcc $(SRC_DIR)main.c $(SRC_DIR)heap_sort.c -o sort
 fast:
 	gcc $(SRC_DIR)main.c $(SRC_DIR)fast_sort.c -o sort
+fast2:
+	gcc $(SRC_DIR)main.c $(SRC_DIR)fast_sort.c -o sort -D PARTITION_FUNC2
+fast3:
+	gcc $(SRC_DIR)main.c $(SRC_DIR)fast_sort.c -o sort -D PARTITION_FUNC3
 merge:
 	gcc $(SRC_DIR)main.c $(SRC_DIR)merge_sort.c -o sort
 count:
@@ -20,6 +24,8 @@ who:
 	@echo "insert: insert sort"
 	@echo "heap: heap sort"
 	@echo "fast: fast sort"
+	@echo "fast2: fast sort, using partition func2"
+	@echo "fast3: fast sort, using partition func3"
 	@echo "merge: merge sort"
 	@echo "test1: run the test script to test insert, heap, fast, merge sort"
 	@echo "test2: run the test script to test count-sort"
